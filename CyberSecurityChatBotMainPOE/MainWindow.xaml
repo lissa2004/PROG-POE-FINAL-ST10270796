@@ -140,6 +140,7 @@
 
         </Border>
 
+        <!-- POE PART 3 TASK 1 : GUI -->
         <Border x:Name="TaskAssistantPanel"
                Grid.Column="1"
                Grid.Row="1"
@@ -147,55 +148,61 @@
                Background="#1E1E1E"
                CornerRadius="15"
                Padding="10"
-               Width="300"
-               Height="700">
-
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+               Width="380"
+               Height="550">
 
 
 
-
-                <!-- Part 3 (POE) TASK 1: TASK ASSISTANT -->
-
-                <StackPanel>
-
-                    <!-- TITLE -->
+            <DockPanel>
+                <!-- HEADER (STICKY) -->
+                <StackPanel DockPanel.Dock="Top">
                     <TextBlock Text="TASK ASSISTANT"
-               FontSize="22"
-               FontWeight="Bold"
-               Foreground="White"
-               Margin="0,0,0,15"
-               HorizontalAlignment="Center"/>
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center"/>
 
-                    <!-- TASK TITLE -->
-                    <TextBlock Text="Task Title"
+                </StackPanel>
+
+                <!-- SCROLLABLE CONTENT -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+
+
+                    <!-- Part 3 (POE) TASK 1: TASK ASSISTANT -->
+
+                    <StackPanel>
+
+                        <!-- TASK TITLE -->
+                        <TextBlock Text="Task Title"
                Foreground="White"/>
 
-                    <TextBox x:Name="TaskTitleBox"
+                        <TextBox x:Name="TaskTitleBox"
                         Height="25"
                         Margin="0,5,0,10"/>
 
-                    <!-- DESCRIPTION -->
-                    <TextBlock Text="Description"
+                        <!-- DESCRIPTION -->
+                        <TextBlock Text="Description"
                Foreground="White"/>
 
-                    <TextBox x:Name="TaskDescriptionBox"
+                        <TextBox x:Name="TaskDescriptionBox"
              Height="60"
              TextWrapping="Wrap"
              AcceptsReturn="True"
              Margin="0,5,0,10"/>
 
-                    <!-- REMINDER -->
-                    <CheckBox x:Name="ReminderCheckBox"
+                        <!-- REMINDER -->
+                        <CheckBox x:Name="ReminderCheckBox"
               Content="Set Reminder"
               Foreground="White"
               Margin="0,5"/>
 
-                    <DatePicker x:Name="ReminderDatePicker"
+                        <DatePicker x:Name="ReminderDatePicker"
                 Margin="0,5,0,10"/>
 
-                    <!-- BUTTONS -->
-                    <Button x:Name="AddTaskButton"
+                        <!-- BUTTONS -->
+                        <Button x:Name="AddTaskButton"
             Content="Add Task"
             Height="30"
             Margin="0,5"
@@ -203,7 +210,7 @@
             Foreground="White"
             Click="AddTaskButton_Click"/>
 
-                    <Button x:Name="ViewTasksButton"
+                        <Button x:Name="ViewTasksButton"
             Content="View Tasks"
             Height="30"
             Margin="0,5"
@@ -211,13 +218,13 @@
             Foreground="White"
             Click="ViewTasksButton_Click"/>
 
-                    <!-- TASK DISPLAY -->
-                    <ListBox x:Name="TaskListBox"
+                        <!-- TASK DISPLAY -->
+                        <ListBox x:Name="TaskListBox"
              Height="60"
              Margin="0,10,0,10"/>
 
-                    <!-- ACTION BUTTONS -->
-                    <Button x:Name="CompleteTaskButton"
+                        <!-- ACTION BUTTONS -->
+                        <Button x:Name="CompleteTaskButton"
             Content="Mark Completed"
             Height="35"
             Margin="0,5"
@@ -225,7 +232,7 @@
             Foreground="White"
             Click="CompleteTaskButton_Click"/>
 
-                    <Button x:Name="DeleteTaskButton"
+                        <Button x:Name="DeleteTaskButton"
             Content="Delete Task"
             Height="35"
             Margin="0,5"
@@ -233,18 +240,17 @@
             Foreground="White"
             Click="DeleteTaskButton_Click"/>
 
-                    <Button x:Name="CloseTaskAssistantPanelButton"
+                        <Button x:Name="CloseTaskAssistantPanelButton"
             Content="Close Task Assistant Panel"
             Height="35"
             Margin="0,5"
             Background="#89056c"
             Foreground="White"
             Click="CloseTaskButton_Click"/>
-                </StackPanel>
-
-            </ScrollViewer>
+                    </StackPanel>
+                </ScrollViewer>
+            </DockPanel>
         </Border>
-
 
 
 

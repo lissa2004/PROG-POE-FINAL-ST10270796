@@ -104,9 +104,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActivityLogEntry.cs" />
+    <Compile Include="ActivityLogService.cs" />
     <Compile Include="CyberAwarenessQuizQuestions.cs" />
     <Compile Include="CybersecurityChatbot.cs" />
+    <Compile Include="NPLService.cs" />
     <Compile Include="QuizManager.cs" />
+    <Compile Include="UserTask.cs" />
+    <Compile Include="TaskService.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -147,6 +152,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio\greeting.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,27 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\activitylogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\activitylogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\usertask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\usertask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\cybersecuritychatbotmainpoe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\activitylogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\activitylogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\nplservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\nplservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\cybersecuritychatbotmainpoe\\cyberawarenessquizquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\cyberawarenessquizquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\cybersecuritychatbotmainpoe\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\cybersecuritychatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\cybersecuritychatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\cyberawarenessquizquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\cyberawarenessquizquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|c:\\users\\treas\\source\\repos\\cybersecuritychatbotmainpoe\\cybersecuritychatbotmainpoe\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\cybersecuritychatbotmainpoe\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{8DD57C09-1C05-4745-AF8F-B67CC5DC9FDC}|CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE.csproj|solutionrelative:cybersecuritychatbotmainpoe\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
@@ -34,24 +50,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAOcBAAAAAAAAAAAuwHoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T21:47:29.967Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ActivityLogService.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\ActivityLogService.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\ActivityLogService.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\ActivityLogService.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\ActivityLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T01:57:45.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\TaskService.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\TaskService.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\TaskService.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\TaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T02:00:43.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivityLogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\ActivityLogEntry.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\ActivityLogEntry.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\ActivityLogEntry.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\ActivityLogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T02:04:30.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserTask.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\UserTask.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\UserTask.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\UserTask.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\UserTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T02:05:39.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NPLService.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\NPLService.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\NPLService.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\NPLService.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\NPLService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T01:52:36.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CybersecurityChatbot.cs",
               "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\CybersecurityChatbot.cs",
               "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\CybersecurityChatbot.cs",
               "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\CybersecurityChatbot.cs",
               "RelativeToolTip": "CyberSecurityChatBotMainPOE\\CybersecurityChatbot.cs",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAmwFAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T22:03:36.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\QuizManager.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\QuizManager.cs",
+              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\QuizManager.cs",
+              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\QuizManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T21:55:49.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CyberAwarenessQuizQuestions.cs",
               "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\CyberAwarenessQuizQuestions.cs",
               "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\CyberAwarenessQuizQuestions.cs",
@@ -64,45 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuizManager.cs",
-              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\QuizManager.cs",
-              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\QuizManager.cs",
-              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\QuizManager.cs",
-              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\QuizManager.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T21:55:49.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml",
-              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-26T21:47:33.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
-              "RelativeToolTip": "CyberSecurityChatBotMainPOE\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAwwMIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T21:47:29.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\treas\\source\\repos\\CyberSecurityChatBotMainPOE\\CyberSecurityChatBotMainPOE\\README.md",
               "RelativeDocumentMoniker": "CyberSecurityChatBotMainPOE\\README.md",
@@ -110,8 +180,7 @@
               "RelativeToolTip": "CyberSecurityChatBotMainPOE\\README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-06-26T22:20:58.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T22:20:58.192Z"
             }
           ]
         }
