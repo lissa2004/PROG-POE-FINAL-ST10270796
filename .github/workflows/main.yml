@@ -27,12 +27,15 @@ jobs:
           echo ""
           echo "=== Searching for .csproj files ==="
           dir /s *.csproj
+          echo ""
+          echo "=== Searching for .sln files ==="
+          dir /s *.sln
         shell: cmd
 
       - name: Restore NuGet packages
         run: |
           cd CyberSecurityChatBotMainPOE
-          nuget restore CyberSecurityChatBotMainPOE.csproj
+          nuget restore CyberSecurityChatBotMainPOE.csproj -PackagesDirectory packages
         shell: cmd
 
       - name: Build project
