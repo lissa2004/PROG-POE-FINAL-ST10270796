@@ -1,0 +1,51 @@
+name: CI - Build and Test
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Setup MSBuild
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      # Step 3: Setup NuGet
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v2
+
+      # Step 4: List directory structure (Debug)
+      - name: List directory contents
+        run: |
+          echo "=== Current Directory ==="
+          dir
+          echo ""
+          echo "=== Searching for .csproj files ==="
+          dir /s *.csproj
+        shell: cmd
+
+      # Step 5: Restore NuGet packages
+      - name: Restore NuGet packages
+        run: nuget restore CyberSecurityChatBotMainPOE.csproj
+        shell: cmd
+
+      # Step 6: Build the project
+      - name: Build project
+        run: msbuild CyberSecurityChatBotMainPOE.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+        shell: cmd
+
+      # Step 7: Upload build artifacts
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: CyberSecurityChatBotMainPOE-Release
+          path: bin\Release\
