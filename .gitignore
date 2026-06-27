@@ -1,0 +1,22 @@
+# Visual Studio 
+.vs/ 
+bin/ 
+obj/ 
+packages/ 
+*.suo 
+*.user 
+*.userosscache 
+*.sln.docstates 
+[Dd]ebug/ 
+[Rr]elease/ 
+x64/ 
+x86/ 
+*.nupkg 
+*.rsuser 
+*.mdf 
+*.ldf 
+*.sdf 
+*.log 
+Thumbs.db 
+Desktop.ini 
+.vscode/ 
