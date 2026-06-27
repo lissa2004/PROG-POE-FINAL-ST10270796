@@ -1,16 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 
 namespace CyberSecurityChatBotMainPOE
 {
-    class QuizManager
+    public class QuizManager  
     {
         private List<QuizQuestion> quizQuestions;
-
         private int currentQuestion;
-
         private int score;
-
         private bool questionAnswered = false;
+
         public QuizManager()
         {
             quizQuestions = new List<QuizQuestion>();
@@ -157,13 +156,15 @@ namespace CyberSecurityChatBotMainPOE
                 CorrectAnswer = "True",
                 Explanation = "Updates often fix important security vulnerabilities."
             });
-
         }
+
+        
 
         public void StartQuiz()
         {
             currentQuestion = 0;
             score = 0;
+            questionAnswered = false;
         }
 
         public bool SubmitAnswer(string answer)
@@ -173,18 +174,20 @@ namespace CyberSecurityChatBotMainPOE
 
             questionAnswered = true;
 
-            bool correct =
-                answer.Trim().ToUpper() ==
-                quizQuestions[currentQuestion].CorrectAnswer.Trim().ToUpper();
+            var question = GetCurrentQuestion();
+            if (question == null)
+                return false;
+
+            string userAnswer = answer.Trim().ToUpper();
+            string correctAnswer = question.CorrectAnswer.Trim().ToUpper();
+
+            bool correct = userAnswer == correctAnswer;
 
             if (correct)
-            {
                 score++;
-            }
 
             return correct;
         }
-
 
 
         public bool NextQuestion()

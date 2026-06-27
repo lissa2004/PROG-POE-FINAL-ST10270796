@@ -241,7 +241,23 @@ namespace CyberSecurityChatBotMainPOE
         private void AnswerButton_Click(object sender, RoutedEventArgs e)
         {
             Button clickedButton = (Button)sender;
-            string selectedAnswer = clickedButton.Content.ToString().Substring(0, 1);
+            string buttonText = clickedButton.Content.ToString();
+
+            // Determine the answer format
+            string selectedAnswer;
+
+            // Check if it's a True/False question
+            if (buttonText == "True" || buttonText == "False")
+            {
+                // True/False: use the FULL word
+                selectedAnswer = buttonText;
+            }
+            else
+            {
+                // Multiple Choice: use the first character (A, B, C, D)
+                selectedAnswer = buttonText.Substring(0, 1);
+            }
+
             bool correct = _quizManager.SubmitAnswer(selectedAnswer);
 
             FeedbackLabel.Text = (correct ? "✅ Correct!\n\n" : "❌ Incorrect!\n\n") + _quizManager.GetExplanation();
@@ -322,8 +338,8 @@ namespace CyberSecurityChatBotMainPOE
             _logService.LogQuizCompleted(_quizManager.Score, _quizManager.TotalQuestions);
 
             QuizPanel.Visibility = Visibility.Collapsed;
-            TaskAssistantPanel.Visibility = Visibility.Visible;
-            StartQuizButton.Visibility = Visibility.Visible;
+            TaskAssistantPanel.Visibility = Visibility.Collapsed;
+            
         }
 
         #endregion

@@ -2,7 +2,7 @@
 
 namespace CyberSecurityChatBotMainPOE
 {
-    class QuizQuestion
+    public class QuizQuestion
     {
         public string Question { get; set; }
 
