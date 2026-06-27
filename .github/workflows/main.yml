@@ -28,8 +28,8 @@ jobs:
           echo "=== Searching for .csproj files ==="
           dir /s *.csproj
           echo ""
-          echo "=== Searching for .sln files ==="
-          dir /s *.sln
+          echo "=== Searching for .slnx files ==="
+          dir /s *.slnx
         shell: cmd
 
       - name: Restore NuGet packages
