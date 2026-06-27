@@ -27,9 +27,6 @@ jobs:
           echo ""
           echo "=== Searching for .csproj files ==="
           dir /s *.csproj
-          echo ""
-          echo "=== Searching for .slnx files ==="
-          dir /s *.slnx
         shell: cmd
 
       - name: Restore NuGet packages
@@ -41,7 +38,7 @@ jobs:
       - name: Build project
         run: |
           cd CyberSecurityChatBotMainPOE
-          msbuild CyberSecurityChatBotMainPOE.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
+          msbuild CyberSecurityChatBotMainPOE.csproj /p:Configuration=Release /p:Platform="AnyCPU" /verbosity:minimal
         shell: cmd
 
       - name: Upload build artifacts
