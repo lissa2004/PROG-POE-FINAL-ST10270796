@@ -1,13 +1,13 @@
-﻿using System;
+﻿using CyberSecurityChatBotMainPOE;
+using CyberSecurityChatBotMainPOE.Models;
+using CyberSecurityChatBotMainPOE.Services;
+using System;
 using System.Media;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using CyberSecurityChatBotMainPOE.Models;
-using CyberSecurityChatBotMainPOE.Services;
-
 using TaskModel = CyberSecurityChatBotMainPOE.Models.UserTask;
 
 
@@ -20,6 +20,8 @@ namespace CyberSecurityChatBotMainPOE
         private readonly ActivityLogService _logService;
         private readonly NLPService _nlpService;
         private readonly QuizManager _quizManager = new QuizManager();
+        private readonly CybersecurityChatbot _chatbot = new CybersecurityChatbot();
+        private readonly Random _random = new Random();
 
         // UI State
         private bool _waitingForName = true;
@@ -52,7 +54,8 @@ namespace CyberSecurityChatBotMainPOE
             Loaded += MainWindow_Loaded;
         }
 
-        #region Initialization
+
+        //Initialization
 
         private void TestConnection()
         {
@@ -87,9 +90,9 @@ namespace CyberSecurityChatBotMainPOE
             TypeText("Hello, Welcome to Cyber Security Awareness Bot!\nI'm here to help you stay safe online.\nPlease enter your name in the chat below.");
         }
 
-        #endregion
+        
 
-        #region Task Methods
+        //Task Methods
 
         private void LoadTasks()
         {
@@ -202,8 +205,12 @@ namespace CyberSecurityChatBotMainPOE
         private void CloseTaskButton_Click(object sender, RoutedEventArgs e)
         {
             TaskAssistantPanel.Visibility = Visibility.Collapsed;
-            TypeText("✅ Task Assistant closed. Type 'task' to open it again.");
+
+            string followUp = GetRandomTaskFollowUp();
+            TypeText($"Task Assistant closed.\n\n{followUp}\n\n💡 You can:\n• Type 'start quiz' to test your knowledge\n• Type 'show activity log' to see your actions\n• Ask me about cybersecurity topics");
+
             _logService.LogPanelClosed("Task Assistant");
+            UserInput.Focus();
         }
 
         private int GetSelectedTaskId()
@@ -219,9 +226,8 @@ namespace CyberSecurityChatBotMainPOE
             return tasks.Find(t => t.Id == id)?.Title ?? "Unknown Task";
         }
 
-        #endregion
-
-        #region Quiz Methods
+        
+        //Quiz Methods
 
         private void StartQuizButton_Click(object sender, RoutedEventArgs e)
         {
@@ -234,6 +240,7 @@ namespace CyberSecurityChatBotMainPOE
             _quizManager.StartQuiz();
             QuizPanel.Visibility = Visibility.Visible;
             TaskAssistantPanel.Visibility = Visibility.Collapsed;
+            StartQuizButton.Visibility = Visibility.Collapsed;
             LoadCurrentQuestion();
             _logService.LogQuizStarted();
         }
@@ -289,9 +296,15 @@ namespace CyberSecurityChatBotMainPOE
         private void CloseQuizButton_Click(object sender, RoutedEventArgs e)
         {
             QuizPanel.Visibility = Visibility.Collapsed;
-            TypeText("✅ Quiz closed. Type 'quiz' to open it again.");
+            TaskAssistantPanel.Visibility = Visibility.Collapsed;
+
+            string followUp = GetRandomFollowUpQuestion();
+            TypeText($"Quiz closed.\n\n{followUp}\n\n💡 You can:\n• Type 'start quiz' to play again\n• Type 'add task' to manage tasks\n• Type 'show activity log' to see your actions");
+
             _logService.LogPanelClosed("Quiz");
+            UserInput.Focus();
         }
+
 
         private void LoadCurrentQuestion()
         {
@@ -337,15 +350,16 @@ namespace CyberSecurityChatBotMainPOE
 
             _logService.LogQuizCompleted(_quizManager.Score, _quizManager.TotalQuestions);
 
-            QuizPanel.Visibility = Visibility.Collapsed;
+            QuizPanel.Visibility = Visibility.Visible;
             TaskAssistantPanel.Visibility = Visibility.Collapsed;
             
         }
 
-        #endregion
+     
 
-        #region Chat Methods
+        //Chat Methods
 
+        //Part3: POE 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
             string input = UserInput.Text.Trim();
@@ -358,15 +372,29 @@ namespace CyberSecurityChatBotMainPOE
 
             AddUserMessage(input);
 
+            // First ask for user's name - WITH ENHANCED INTRODUCTION
             if (_waitingForName)
             {
                 _userName = input;
                 _waitingForName = false;
-                TypeText($"Nice to meet you, {_userName}! Ask me anything about cybersecurity.");
+
+                string introMessage = $"Nice to meet you, {_userName}! 👋\n\n" +
+                                      "I'm your Cybersecurity Awareness Bot. I'm here to help you stay safe online! 💻🔒\n\n" +
+                                      "📚 **Here are some topics you can ask me about:**\n" +
+                                      "• 🔹 **Phishing** - How to spot and avoid email scams\n" +
+                                      "• 🔹 **Passwords** - How to create and manage strong passwords\n" +
+                                      "• 🔹 **Safe Browsing** - How to browse the internet safely\n" +
+                                      "• 🔹 **Hacking** - Understanding cyber threats\n" +
+                                      "💡 **You can also:**\n"+
+                                      "🆘 Type 'help' anytime to see all commands!\n\n" +
+                                      "What would you like to learn about today? 🤔";
+
+                TypeText(introMessage);
                 UserInput.Clear();
                 return;
             }
 
+            // Detect intent using NLP service
             var intent = _nlpService.DetectIntent(input);
             _logService.LogNLPInteraction(input, intent.ToString());
 
@@ -382,7 +410,7 @@ namespace CyberSecurityChatBotMainPOE
                     if (!string.IsNullOrWhiteSpace(taskDescription) && taskDescription != input)
                     {
                         TaskDescriptionBox.Text = taskDescription;
-                        TypeText($"I'll help you add a task: \"{taskDescription}\". Please fill in the details below.");
+                        TypeText($"I'll help you add a task: \"{taskDescription}\". Please fill in the details on the TASK ASSISTANT.");
                         _logService.LogTaskExtraction(input, taskDescription);
                     }
                     else
@@ -406,7 +434,7 @@ namespace CyberSecurityChatBotMainPOE
                     return;
 
                 case NLPService.Intent.Info:
-                    string response = CybersecurityChatbot.GetResponse(input);
+                    string response = _chatbot.GetResponse(input);
                     TypeText(response);
                     _logService.AddLog("INFO", $"User asked about: '{input}'");
                     break;
@@ -418,10 +446,61 @@ namespace CyberSecurityChatBotMainPOE
 
             UserInput.Clear();
         }
+       
 
-        #endregion
+        private Random random = new Random();
 
-        #region Activity Log
+        private string GetRandomFollowUpQuestion()
+        {
+            string[] questions = {
+        "What would you like to learn about next? 🤔",
+        "Is there a specific cybersecurity topic you're interested in? 💻",
+        "Would you like me to explain a security concept? 🔒",
+        "Do you have any questions about staying safe online? 🛡️",
+        "Would you like to test your knowledge with another quiz? 🧠",
+        "Can I help you with anything else today? 😊"
+    };
+            return questions[random.Next(questions.Length)];
+        }
+
+        private string GetRandomTaskFollowUp()
+        {
+            string[] questions = {
+        "Would you like to learn more about cybersecurity topics? 🔒",
+        "Do you want to test your knowledge with a quiz? 🧠",
+        "Is there anything else I can help you with? 😊",
+        "Would you like to see your recent activity? 📋",
+        "Do you have any security questions I can answer? 💻",
+        "Would you like to add another task? 📝"
+    };
+            return questions[random.Next(questions.Length)];
+        }
+
+        private string GetRandomQuizFollowUp(int score)
+        {
+            if (score >= 10)
+            {
+                string[] questions = {
+            "Would you like to try a different cybersecurity topic? 🔒",
+            "Do you have any questions about what you learned? 💻",
+            "Would you like to learn about phishing or passwords next? 📚",
+            "Ready for another challenge? 🧠"
+        };
+                return questions[random.Next(questions.Length)];
+            }
+            else
+            {
+                string[] questions = {
+            "Would you like to review the topics and try again? 📖",
+            "Do you want me to explain any cybersecurity concepts? 💻",
+            "Would you like to learn more to improve your score? 🔒",
+            "Keep practicing and you'll get better! 💪"
+        };
+                return questions[random.Next(questions.Length)];
+            }
+        }
+
+        // Activity Log
 
         private void ShowActivityLog()
         {
@@ -429,9 +508,9 @@ namespace CyberSecurityChatBotMainPOE
             TypeText(logSummary);
         }
 
-        #endregion
+       
 
-        #region UI Helper Methods
+        //UI Helper Methods
 
         private async void TypeText(string message)
         {
@@ -513,6 +592,6 @@ namespace CyberSecurityChatBotMainPOE
                 SendButton_Click(sender, e);
         }
 
-        #endregion
+    
     }
 }
